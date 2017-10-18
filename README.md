@@ -4,7 +4,7 @@ SlayTheDragon
 Coming soon
 --------------------------
 
-### Welcome to ZFMAPS
+### Ready to slay ?
 
 * Make sure you have node.js and git installed on your machine.
 
