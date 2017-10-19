@@ -1,13 +1,21 @@
 import React from 'react'
+import { Drawer } from 'material-ui'
+import { connect } from 'react-redux'
 import './menu.css'
 
-export default () =>{
+const Menu = ({toggle, dispatch }) =>{
   return (
-    <div className="menu-container">
-      
-    </div>
+    <Drawer 
+      open={toggle}
+      width={300}
+      docked={false}
+      onRequestChange={(a) => dispatch({ type: "TOGGLE_MENU"}) }>
+
+    </Drawer>
   )
 }
+
+export default connect(state => state.toggleMenu)(Menu)
 
 
 

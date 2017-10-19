@@ -1,4 +1,17 @@
 .menu-container  {
   flex: 1;
-  background: lightcoral;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-header {
+  margin: 1em;
+  width: 90%;
+  max-width: 90%;
+  height: 10%;
+  min-height: 10%;
+  background: pink;
+
 }

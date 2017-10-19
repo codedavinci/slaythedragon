@@ -1,4 +1,5 @@
 .main-container {
-  flex: 2;
-  background: lightblue
+  width: 100vw;
+  height: calc(100vh - 64px);
+  display: flex;
 }

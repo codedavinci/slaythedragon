@@ -3,15 +3,16 @@ import { MuiThemeProvider } from 'material-ui'
 import './App.css';
 import { Menu } from './menu'
 import { Main } from './content'
+import { Layout } from './layout'
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <div className="app-container">
+        <Layout>
           <Menu />
           <Main />
-        </div>
+        </Layout>
       </MuiThemeProvider>
     );
   }
