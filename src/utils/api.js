@@ -4,7 +4,10 @@ import { enhancedURL } from '../constants'
 
 
 const authHeaders = () => {
-  return { "X-Riot-Token": process.env.REACT_APP_API_KEY }
+  return process.env.NODE_ENV === "production"
+  ? { "origin": "https://champs-lol.herokuapp.com", "X-Riot-Token": process.env.REACT_APP_API_KEY }
+  : { "X-Riot-Token": process.env.REACT_APP_API_KEY }
+
 }
 
 export const get = (endpoint) => {
