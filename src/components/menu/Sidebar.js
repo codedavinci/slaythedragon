@@ -1,5 +1,5 @@
 import React from 'react'
-import { Logo } from '../common'
+// import { Logo } from '../common'
 import './menu.css'
 
 const games = [

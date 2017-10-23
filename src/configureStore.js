@@ -8,7 +8,7 @@ export default (initialState) => {
 
   const middleware = process.env.NODE_ENV !== 'production' ? [thunk, createLogger()] : [ thunk]
 
-  const createStoreWithMiddleware = comcseEnhancers(applyMiddleware(...middleware))(createStore)
+  const createStoreWithMiddleware = composeEnhancers(applyMiddleware(...middleware))(createStore)
 
   const store = createStoreWithMiddleware(rootReducer, initialState)
 
