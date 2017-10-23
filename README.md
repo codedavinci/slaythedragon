@@ -1,7 +1,7 @@
 SlayTheDragon
 ===============================
 
-Coming soon
+http://champions-lol.herokuapp.com
 --------------------------
 
 ### Ready to slay ?

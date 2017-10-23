@@ -4,7 +4,7 @@ import { enhancedURL } from '../constants'
 
 
 const authHeaders = () => {
-  return { "X-Riot-Token": "RGAPI-7dda96fa-a43b-47ff-97f5-e7d870dc30c7" }
+  return { "X-Riot-Token": process.env.REACT_APP_API_KEY }
 }
 
 export const get = (endpoint) => {
