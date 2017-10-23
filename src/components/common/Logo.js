@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../STDLogo.png'
+import Logo from '../../Logo-White.png'
 
 export default () => {
   return (
