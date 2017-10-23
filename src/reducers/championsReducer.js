@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
     case "GET_CHAMPIONS_SUCCESS":
       return {
         ...state,
-        champions: {...action.champs },
+        champions: {...action.champs.data},
         isLoading: false
       }
     case "GET_CHAMPIONS_ERROR":
