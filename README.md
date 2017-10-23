@@ -4,7 +4,7 @@ SlayTheDragon
 http://champions-lol.herokuapp.com
 --------------------------
 
-### Ready to slay ?
+### Ready to check all the champions ?
 
 * Make sure you have node.js and git installed on your machine.
 
