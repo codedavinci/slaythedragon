@@ -1,12 +1,12 @@
 import React from 'react'
-import { Header } from '../header'
+import './layout.css'
+import { Sidebar } from '../menu'
 
-export default ({ children }) => {
-  return (
-    <div>
-      <Header />
+export default ({ children }) =>  (
+    <div className="layout-container">
+      <Sidebar />
       {children}
     </div>
   )
-}
+
 

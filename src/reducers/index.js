@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import toggleReducer from './toggleReducer'
+import championsReducer from './championsReducer'
 
 export default combineReducers({
-  toggleMenu: toggleReducer
+  champs: championsReducer
 })
