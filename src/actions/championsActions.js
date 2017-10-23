@@ -6,6 +6,21 @@ const getChampionsSuccess = (champs) => ({ type: "GET_CHAMPIONS_SUCCESS", champs
 const getChampionsError = (err) => ({ type: "GET_CHAMPIONS_ERROR", err })
 
 
+
+
+const getChampionsTrueSource = (dispatch) => {
+  return api.get("/lol/static-data/v3/champions")
+    .then(champs => dispatch(getChampionsSuccess(champs.data)))
+    .catch(err => dispatch(getChampionsError(err)))
+}
+
+
+const getChampionsMock = (dispatch) => {
+  return setTimeout(() => {
+    dispatch(getChampionsSuccess(champs))
+  }, 2000)
+}
+
 export const getChampions = () => {
 
   return (dispatch) => {
@@ -16,18 +31,8 @@ export const getChampions = () => {
       getChampionsMock(dispatch)
     }
   }
-
-  const getChampionsTrueSource = (dispatch) => {
-    return api.get("/lol/static-data/v3/champions")
-      .then(champs => dispatch(getChampionsSuccess(champs.data)))
-      .catch(err => dispatch(getChampionsError(err)))
-  }
 }
 
-const getChampionsMock = (dispatch) => {
-  return setTimeout(() => {
-    dispatch(getChampionsSuccess(champs))
-  }, 2000)
-}
+
 
 
