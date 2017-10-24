@@ -8,8 +8,6 @@ import { Error, Loader } from '../common'
 
 const Main = ({ champs }) => {
   const { isLoading, error, champions } = champs
-  
-  if(error) { return <Error err={error} />}
   return (
     <div className="main-container">
       {  isLoading 
