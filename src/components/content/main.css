@@ -1,5 +1,5 @@
 .main-container {
-  flex: 2;
+  flex: 3;
   display: flex;  
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }

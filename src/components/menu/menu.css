@@ -17,7 +17,7 @@
 
 .sidebar {
   background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
-  flex: 1;
+  flex: 1.2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,11 +27,12 @@
    flex: 1;
    display: flex;
    border-bottom: 1px solid white; 
+   align-items: center;
 }
 
 .title-logo {
  font-family: 'Press Start 2P', cursive;
- font-size: 130%;
+ font-size: 120%;
  color: white; margin: auto
 }
 
@@ -58,4 +59,11 @@
   color: white; 
   margin: auto;
   padding: 10px;
+}
+
+
+@media screen and (min-width: 1366px)  { 
+  .title-logo {
+    font-size: 170%;
+  }
 }
